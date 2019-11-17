@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Purchase Document &amp; Created</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Purchase Document Item &amp; Created</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Purchase Document &amp; Approved</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Purchase Document &amp; Closed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Purchase Document &amp; Deleted</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Purchase Document &amp; Already exists in DB Table</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Purchase Document &amp; Already exists in Buffer Table</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Purchase Document Item &amp; Already exists in DB Table</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Purchase Document Item &amp; Already exists in Buffer Table</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Purchase Document Number is Intial</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Purchase Document Item Number is Initial</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Purchase Document &amp; Updated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Purchase Document Item &amp; Updated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Purchase Document &amp; Is already Approved</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>Purchase Document &amp; Is already Closed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPURCHDOC_EXCEPTIONS</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>Purchase Document Item &amp; Deleted</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

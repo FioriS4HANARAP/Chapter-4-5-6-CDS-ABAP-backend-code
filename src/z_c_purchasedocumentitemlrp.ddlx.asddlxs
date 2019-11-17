@@ -1,0 +1,151 @@
+@Metadata.layer: #CORE
+@UI: {
+    headerInfo: {
+        description: {
+            value: 'PurchaseDocumentItem',
+            type: #STANDARD
+        },
+        title: {
+            value: 'PurchaseDocumentItem',
+            type: #STANDARD
+        },
+        typeName: 'Purchase Document Item',
+        typeNamePlural: 'Purchase Document Items',
+        imageUrl: 'PurchaseDocumentItemImageURL'
+    }
+}
+
+annotate view Z_C_PurchaseDocumentItemLrp with
+{
+  @UI.lineItem: [{ importance: #HIGH, position: 10 }]
+  PurchaseDocumentItemImageURL;
+
+  @UI: {
+    selectionField: [{ position: 10 }],
+    facet: [
+         {
+           id:         'PriceDataPointFacet',
+           purpose:    #HEADER,
+           type:       #DATAPOINT_REFERENCE,
+           targetQualifier: 'Price'
+          },
+          {
+           id:         'QuantityDataPointFacet',
+           purpose:    #HEADER,
+           type:       #DATAPOINT_REFERENCE,
+           targetQualifier: 'Quantity'
+          },
+          {
+           id:         'OverallItemPriceDataPointFacet',
+           purpose:    #HEADER,
+           type:       #DATAPOINT_REFERENCE,
+           targetQualifier: 'OverallItemPrice'
+          },
+          {
+           id:         'VendorRatingDataPointFacet',
+           purpose:    #HEADER,
+           type:       #DATAPOINT_REFERENCE,
+           targetQualifier: 'VendorRating'
+          },
+       {
+          label: 'Purchase Document',
+          type: #COLLECTION,
+          id: 'PurchaseDocumentCollectionFacet',
+          purpose: #STANDARD
+        },
+        // Basic Data Section
+          {
+            label: 'Basic Data',
+            type: #FIELDGROUP_REFERENCE,
+            id: 'BasicDataFieldGroupReferenceFacet',
+            parentId: 'PurchaseDocumentCollectionFacet',
+            purpose: #STANDARD,
+            targetQualifier: 'BasicDataFieldGroup'
+          },
+           // Purchasing Data Section
+        {
+          label: 'Purchasing Data',
+          type: #FIELDGROUP_REFERENCE,
+          id: 'PurchasingDocumentFieldGroupReferenceFacet',
+          parentId: 'PurchaseDocumentCollectionFacet',
+          purpose: #STANDARD,
+          targetQualifier: 'PurchasingDocumentFieldGroup'
+        }
+     ],
+     fieldGroup: [{ qualifier: 'PurchasingDocumentFieldGroup', position: 10, importance: #HIGH }]
+  }
+
+
+  @UI.hidden: true
+  PurchaseDocument;
+
+  @UI: {
+  lineItem: [{ importance: #HIGH, position: 20 }],
+  fieldGroup: [{ qualifier: 'PurchasingDocumentFieldGroup', position: 20, importance: #HIGH }]
+  }
+  PurchaseDocumentItem;
+  @UI: {
+  fieldGroup: [{ qualifier: 'PurchasingDocumentFieldGroup', position: 30, importance: #HIGH }]
+  }
+  Description;
+  @UI: {
+  lineItem: [{ importance: #HIGH, position: 30 }],
+  fieldGroup: [{ qualifier: 'PurchasingDocumentFieldGroup', position: 40, importance: #HIGH }]
+  }
+  @UI.dataPoint: {
+    visualization: #NUMBER,
+    title: 'Price'
+  }
+  Price;
+
+
+  @UI: {
+  lineItem: [{ importance: #HIGH, position: 40 }],
+  fieldGroup: [{ qualifier: 'PurchasingDocumentFieldGroup', position: 50, importance: #HIGH }]
+  }
+  @UI.dataPoint: {
+    visualization: #NUMBER,
+    title: 'Quantity'
+  }
+  Quantity;
+
+  @UI: {
+  lineItem: [{ importance: #HIGH, position: 50 }],
+  fieldGroup: [{ qualifier: 'PurchasingDocumentFieldGroup', position: 60, importance: #HIGH }]
+  }
+  @UI.dataPoint: {
+    visualization: #NUMBER,
+    title: 'OverAll Item Price'
+  }
+  OverallItemPrice;
+
+  @UI: {
+  lineItem: [{ importance: #HIGH, position: 60 }],
+  fieldGroup: [{ qualifier: 'BasicDataFieldGroup', position: 10, importance: #HIGH }]
+  }
+  Vendor;
+
+  @UI: {
+  lineItem: [{ importance: #HIGH, position: 70 }],
+  fieldGroup: [{ qualifier: 'BasicDataFieldGroup', position: 20, importance: #HIGH }],
+  textArrangement: #TEXT_ONLY
+  }
+  VendorType;
+
+
+  @UI.dataPoint: {
+    visualization: #RATING,
+    targetValue: 5,
+    title: 'Vendor Rating'
+  }
+  @UI.lineItem: [{ importance: #MEDIUM, position: 80, type: #AS_DATAPOINT }]
+  VendorRating;
+
+  @EndUserText.label: 'Currency'
+  Currency;
+
+  @EndUserText.label: 'Quantity Unit'
+  QuantityUnit;
+
+
+}
